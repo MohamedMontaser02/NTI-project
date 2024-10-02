@@ -38,7 +38,7 @@ fetch(`http://localhost:3000/homeDetail/${homeId}`)
       </div>
       <div class="ele">
           <div class="elename">السعر</div>
-          <div class="elevalue">${datahome.price}</div> <!-- Changed to use datahome.price -->
+          <div class="elevalue"> ${datahome.price} جنيه </div> <!-- Changed to use datahome.price -->
       </div>
       <div class="ele">
           <div class="elename">المكان</div>
@@ -55,10 +55,8 @@ fetch(`http://localhost:3000/homeDetail/${homeId}`)
         </div>
       </div>
       <div class="left">
-        <img src=${datahome.imgsURL
-
-          
-        } alt="" srcset="" />
+        <img src=${datahome.imgsURL } alt="" srcset="" /> 
+  
       </div>
 
       `

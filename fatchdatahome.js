@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function displayhome(homesdata)
 {
-    document.getElementById("output").innerHTML=""
-    var cart=""
+    document.getElementById("outputoutput").innerHTML=""
+    var cart=``
     for(var i=0;i<homesdata.length;i++)
     {
         cart +=` <div class="ele">
@@ -38,13 +38,13 @@ function displayhome(homesdata)
           <div class="lower">
             <div class="name">${homesdata[i].name}</div>
             <div class="place">${homesdata[i].place}</div>
-            <div class="prics">${homesdata[i].price}</div>
+            <div class="prics">${homesdata[i].price} جنيه</div>
             <button type="button" class="info-button" onclick="moreinfo('${homesdata[i]._id}')">معلومات اضافيه</button>
           </div>
         </div>`
 
     }
-    document.getElementById("output").innerHTML=cart
+    document.getElementById("outputoutput").innerHTML=cart
 }
 console.log(homesdata)
 

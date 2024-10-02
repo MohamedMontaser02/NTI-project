@@ -18,7 +18,7 @@
 }
 body
 {
-    background:linear-gradient(135deg,#f65f54,#ffffff12);
+    /* background:linear-gradient(135deg,#f65f54,#ffffff12); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -93,7 +93,7 @@ section
 {
     text-align: center;
     direction: rtl;
-    width: 60%;
+    width: 90%;
     box-shadow: 1px 1px 5px var(--charcoal-grey);
     padding: 10px 30px   ;
 }
@@ -143,4 +143,16 @@ section
     font-style: bold;
     font-size: 2em;
     border: none;
+}
+
+
+#homePostForm .upper
+{
+    display: flex;
+    width: 100%;
+}
+.upper .test
+{
+    width: 50%;
+    margin-left: 3em;
 }

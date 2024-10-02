@@ -288,12 +288,14 @@ section
 .section2 .cont2 .ele .upper
 {
     width: 100%;
+    height: 60%;
 
 
 }
 .section2 .cont2 .ele .upper img
 {
     width: 100%;
+    height: 100%;
 
 }
 .section2 .cont2 .ele .lower

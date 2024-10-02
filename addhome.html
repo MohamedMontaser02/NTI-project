@@ -46,60 +46,77 @@
 
     <section class="main">
       <form action="/create-homepost" method="POST" id="homePostForm">
-        <input type="hidden" id="usernameiddd" name="username" value="" />
-        <!-- Hidden field for username -->
+        <div class="upper">
+        <div class="test">
+          <input type="hidden" id="usernameiddd" name="username" value="" />
+          <!-- Hidden field for username -->
 
-        <div class="inputgroup">
-          <label for="name">الاسم:</label>
-          <input type="text" id="name" name="name" required />
+          <div class="inputgroup">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="inputgroup">
+            <label for="description">الوصف:</label>
+            <input type="text" id="description" name="description" required />
+          </div>
+
+          <div class="inputgroup">
+            <label for="Nrooms">عدد الغرف:</label>
+            <input type="number" id="Nrooms" name="Nrooms" required />
+          </div>
+
+          <div class="inputgroup">
+            <label for="Nbathrooms">عدد الحمامات:</label>
+            <input type="number" id="Nbathrooms" name="Nbathrooms" required />
+          </div>
         </div>
+        <div class="test">
+          <div class="inputgroup">
+            <label for="price">السعر:</label>
+            <input type="number" id="price" name="price" required />
+          </div>
 
-        <div class="inputgroup">
-          <label for="description">الوصف:</label>
-          <input type="text" id="description" name="description" required />
+          <div class="inputgroup">
+            <label for="place">المكان:</label>
+            <input type="text" id="place" name="place" required />
+          </div>
+
+          <div class="inputgroup">
+            <label for="floor">الطابق:</label>
+            <input type="number" id="floor" name="floor" required />
+          </div>
+
+          <div class="inputgroup">
+            <label for="area">المساحة:</label>
+            <input type="number" id="area" name="area" required />
+          </div>
+
+          <div class="inputgroup">
+            <label for="imgs">رفع الصور:</label>
+            <input
+              type="file"
+              id="imgs"
+              name="imgs"
+              accept="image/*"
+              required
+            />
+          </div>
+
+          <div id="uploadStatus"></div>
+
+          <img
+            id="uploadedImage"
+            src=""
+            alt="Uploaded Image will appear here"
+          />
         </div>
+      </div>
 
-        <div class="inputgroup">
-          <label for="Nrooms">عدد الغرف:</label>
-          <input type="number" id="Nrooms" name="Nrooms" required />
-        </div>
-
-        <div class="inputgroup">
-          <label for="Nbathrooms">عدد الحمامات:</label>
-          <input type="number" id="Nbathrooms" name="Nbathrooms" required />
-        </div>
-
-        <div class="inputgroup">
-          <label for="price">السعر:</label>
-          <input type="number" id="price" name="price" required />
-        </div>
-
-        <div class="inputgroup">
-          <label for="place">المكان:</label>
-          <input type="text" id="place" name="place" required />
-        </div>
-
-        <div class="inputgroup">
-          <label for="floor">الطابق:</label>
-          <input type="number" id="floor" name="floor" required />
-        </div>
-
-        <div class="inputgroup">
-          <label for="area">المساحة:</label>
-          <input type="number" id="area" name="area" required />
-        </div>
-
-        <div class="inputgroup">
-          <label for="imgs">رفع الصور:</label>
-          <input type="file" id="imgs" name="imgs" accept="image/*" required />
-        </div>
-
-        <div id="uploadStatus"></div>
-
-        <img id="uploadedImage" src="" alt="Uploaded Image will appear here" />
-
-        <div class="inputgroupp">
-          <button type="submit">إنشاء إعلان للمنزل</button>
+        <div class="lower">
+          <div class="inputgroupp">
+            <button type="submit">إنشاء إعلان للمنزل</button>
+          </div>
         </div>
       </form>
     </section>

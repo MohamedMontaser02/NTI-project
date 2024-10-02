@@ -25,10 +25,10 @@ document.getElementById('myAnchor').addEventListener('click', function (e) {
             window.open(`addhome.html?username=${encodeURIComponent(data.username)}`);
          }
           else {
-            return res.json(); 
+            output.innerText = "Login failed: " + (data.message || "Invalid credentials.");
         }
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
-    });
+        output.innerText = "An error occurred while logging in. Please try again.";    });
 });
