@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.7)), url("images/background/background\(1\).jpg")  ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+header .top
+{
+    padding: .5em 5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+
+}
+header .right .eles
+{
+    display: flex;
+}
+
+header .right .eles .ele
+{
+    display: flex;
+    padding-right: 1em;
+    align-items: center;
+    color: white;
+}
+header .right .eles .ele .elec
+{
+    padding-right: .3em;
+
+}
+
+
+
+header .left 
+{
+    display: flex;
+}
+
+.links a
+{
+    display: inline-block;
+    /* padding-right: .1em; */
+    text-decoration: none;
+    color: white;
+}
+.left i
+{
+    display: inline-block;
+    padding-right: .2em;
+    text-decoration: none;
+    color: white;
+}
+#searchicon
+{
+    padding: 0px .5em;
+}
+
+
+.center
+{
+    padding: .5em 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center .logo 
+{
+    height: 100%;
+
+}
+.center .logo img
+{
+    height: 100%;
+
+}
+
+.center a
+{
+    text-decoration: none;
+    font-family: "Zain", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.1em;
+}
+.center .login a
+{
+    background-color: #F56960;
+    color: white;
+    padding: 2px 4px;
+
+}
+
+.center .mino a
+{
+    color: white;
+    padding: 2px 4em;
+    
+}
+
+.mainsection p
+{
+    color: white;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 4.5em;
+    margin-top: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.sec2
+{
+    width: 100%;
+    height: 70vh;
+}
+
+.serachseaction
+{
+    width: 80%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    margin: -5em auto;
+    box-shadow: 7px 10px 10px gray;
+}
+.serachseaction .inputs
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.serachseaction .inputs input
+{
+    display: block;
+}
+.serachseaction .inputs select
+{
+    display: block;
+}
+.divpric
+{
+    display: flex;
+}
+
+.divpric input
+{
+    display: inline-block;
+    width: 30%;
+}
+.serachseaction .inputgrout
+{
+    padding: 10px;
+    width: 100%;
+}
+.inputgrout label
+{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 1;
+      font-size: 1.4em;
+      padding-bottom: .5em;
+      width: 100%;
+}
+.inputgrout input
+{
+
+    background-color: #F8F8F8;
+    color: #383838;
+    border: none;
+    height: 50px;
+    padding: 0 15px;
+    width: 100%;
+    line-height: 1.6;
+}
+.inputgrout select
+{
+    background-color: #F8F8F8;
+    color: #383838;
+    border: none;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 1.6;
+    width:fit-content;
+}
+.inputgrout #searchnow
+{
+    padding: 5px 20px;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 1;
+      font-size: 1.4em;
+      padding-bottom: .5em;
+      background-color: #F56960;
+      color: white;
+      border: none;
+      box-shadow: .5px .5px 2px black;
+
+}
+.divpric 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricel
+{
+    margin-left: 5px;
+} 

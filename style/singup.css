@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --coral-red: #F65F54;
+    --soft-peach: #FF9671;
+    --golden-yellow: #FFD700;
+    --light-pink: #FFCCCB;
+    --sky-blue: #4B9CD3;
+    --charcoal-grey: #333333;
+    --fresh-green: #00B894;
+}
+
+.header
+{
+background-color: #F56960;
+width: 100%;
+}
+
+.header .top
+{
+    padding: .5em 5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+
+}
+.header .right .eles
+{
+    display: flex;
+}
+
+.header .right .eles .ele
+{
+    display: flex;
+    padding-right: 1em;
+    align-items: center;
+    color: white;
+}
+.header .right .eles .ele .elec
+{
+    padding-right: .3em;
+
+}
+
+
+
+.header .left 
+{
+    display: flex;
+}
+
+.links a
+{
+    display: inline-block;
+    /* padding-right: .1em; */
+    text-decoration: none;
+    color: white;
+}
+.left i
+{
+    display: inline-block;
+    padding-right: .2em;
+    text-decoration: none;
+    color: white;
+}
+
+
+section
+{
+    margin: 1em 4em;
+}
+
+body
+{
+    background:linear-gradient(135deg,#f65f54,#ffffff12);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.main
+{
+    text-align: center;
+    width: 100%;
+}
+
+
+.main .title
+{
+    color: aliceblue;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: .5em
+    
+}
+
+
+
+.title img
+{
+    width: 5%;
+    padding-left: 10px;
+    transition: ease-in-out .4s;
+}
+
+.title  a:hover img
+{
+    transform: scale(1.1);
+}
+.cont
+{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    /* background-color: aqua; */
+    /* border: solid #333333 1px; */
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--charcoal-grey);
+    padding: 10px 30px   ;
+
+}
+
+.cont .inputgroup
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
+    align-items: center;
+}
+
+.inputgroup label
+{
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 1.4em;
+    width: 40%;
+    text-align: right;
+
+}
+
+.inputgroup input
+{
+    background-color: #F8F8F8;
+    color: var(--charcoal-grey);
+    border: none;
+    height: 50px;
+    padding: 0 15px;
+    width: 60%;
+    line-height: 1.6;
+    font-size: 1.4em;
+    border-top-left-radius: 15px;
+}
+
+.inputgroupp  .loginbtn a
+{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #f65f54;
+    color: white;
+    color: aliceblue;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    transition: ease-in .4s;
+    cursor: pointer;
+
+}
+
+
+.inputgroupp  .loginbtn
+{
+    margin: 1.5em;
+}
+
+
+.inputgroupp  .loginbtn a:hover
+{
+    background-color: #f25448;
+}
+
+.chooooose
+{
+    width: 50%;
+    display: flex;
+}
+
+.chose1
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#userid,
+#sellerid
+{
+    accent-color: #f65f54; /* Set the color you want */
+
+}
+.inputgroupfrouser
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.inputgroupfrouser p
+{
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 1.4em;
+    text-align: right;
+}
+.inputgroupfrouser .loggin a
+{
+    padding-right: 1em;
+    text-decoration: none;
+    font-family: "Zain", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.5em;
+    text-align: right;
+    color: var(--sky-blue);
+    transition: ease .4s;
+}
+.inputgroupfrouser .loggin a:hover
+{
+    color: #2a87c5;
+}
+
+#outputmasseage
+{
+    color: var(--coral-red);
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 1.6em;
+    background-color: white;
+}

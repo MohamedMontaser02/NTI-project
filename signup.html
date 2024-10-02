@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/singup.css" />
+  </head>
+  <body>
+    <div class="header" dir="rtl">
+      <div class="top">
+        <div class="right">
+          <div class="eles">
+            <div class="ele">
+              <i class="fa-solid fa-phone-flip"></i>
+              <div class="elec">01122596922</div>
+            </div>
+
+            <div class="ele">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="elec">maskn$gmail.com</div>
+            </div>
+            <div class="ele">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="elec">maskn@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <div class="links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main" dir="rtl">
+      <div class="title">
+        <a href="index.html">
+          <img src="images/house-key-real-state-business-symbol (1).png" alt=""
+        /></a>
+        إنشاء حساب في مسكن
+      </div>
+
+      <div class="cont">
+        <div class="inputgroup">
+          <label for="userName">اسم المستخدم</label>
+          <input type="text" id="userName" name="userNameF" />
+        </div>
+        <div class="inputgroup">
+          <label for="userName">البريد الإلكتروني</label>
+          <input type="email" id="email" name="emailF" />
+        </div>
+        <div class="inputgroup">
+          <label for="Passworld">كلمة السر</label>
+          <input type="password" id="password" name="PasswordF" />
+        </div>
+        <div class="inputgroup">
+          <label>نوع الدخول</label>
+          <div class="chooooose">
+            <div class="chose1">
+              <label id="choose" for="sellerid">بائع</label><br />
+              <input
+                type="radio"
+                id="sellerid"
+                name="persontype"
+                value="seller"
+              />
+            </div>
+            <div class="chose1">
+              <label id="choose" for="userid">مستخدم</label><br />
+              <input type="radio" id="userid" name="persontype" value="user" />
+            </div>
+          </div>
+        </div>
+        <div class="inputgroupp">
+          <div class="loginbtn"><a id="myAnchor">انشاء حساب</a></div>
+        </div>
+        <div class="inputgroupp">
+          <div id="outputmasseage"></div>
+        </div>
+        <div class="inputgroupfrouser">
+          <p for="">لديك حساب بالفعل</p>
+          <div class="loggin"><a href="signin.html">سجل دخول</a></div>
+        </div>
+      </div>
+    </section>
+    <script src="signup.js"></script>
+  </body>
+</html>

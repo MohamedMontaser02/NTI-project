@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/singup.css" />
+  </head>
+  <body>
+    <div class="header" dir="rtl">
+      <div class="top">
+        <div class="right">
+          <div class="eles">
+            <div class="ele">
+              <i class="fa-solid fa-phone-flip"></i>
+              <div class="elec">01122596922</div>
+            </div>
+
+            <div class="ele">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="elec">maskn$gmail.com</div>
+            </div>
+            <div class="ele">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="elec">maskn@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <div class="links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+          </div>
+          <a href="" id="searchicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="main"></section>
+  </body>
+</html>

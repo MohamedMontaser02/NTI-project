@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styleuseruploud.css" />
+  </head>
+  <body>
+    <div class="header" dir="rtl">
+      <div class="top">
+        <div class="right">
+          <div class="eles">
+            <div class="ele">
+              <i class="fa-solid fa-phone-flip"></i>
+              <div class="elec">01122596922</div>
+            </div>
+
+            <div class="ele">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="elec">maskn$gmail.com</div>
+            </div>
+            <div class="ele">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="elec">maskn@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <div class="links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+          </div>
+          <a href="" id="searchicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="main">
+      <form
+        action="/create-homepost"
+        method="POST"
+      >
+      <input type="hidden" name="username" value="<%= username %>"> <!-- Hidden field for username -->
+
+        <div class="inputgroup">
+          <label for="name">الاسم:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="description">الوصف:</label>
+          <input type="text" id="description" name="description" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="Nrooms">عدد الغرف:</label>
+          <input type="number" id="Nrooms" name="Nrooms" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="Nbathrooms">عدد الحمامات:</label>
+          <input type="number" id="Nbathrooms" name="Nbathrooms" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="price">السعر:</label>
+          <input type="number" id="price" name="price" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="place">المكان:</label>
+          <input type="text" id="place" name="place" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="floor">الطابق:</label>
+          <input type="number" id="floor" name="floor" required />
+        </div>
+
+        <div class="inputgroup">
+          <label for="area">المساحة:</label>
+          <input type="number" id="area" name="area" required />
+        </div>
+
+        <!-- <div class="inputgroup">
+          <label for="imgs">رفع الصور:</label>
+          <input
+            type="file"
+            id="imgs"
+            name="imgs"
+            accept="image/*"
+            multiple
+            required
+          />
+        </div> -->
+
+        <div class="inputgroupp">
+          <button type="submit">إنشاء إعلان للمنزل</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

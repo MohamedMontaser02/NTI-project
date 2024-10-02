@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --coral-red: #F65F54;
+    --soft-peach: #FF9671;
+    --golden-yellow: #FFD700;
+    --light-pink: #FFCCCB;
+    --sky-blue: #4B9CD3;
+    --charcoal-grey: #333333;
+    --fresh-green: #00B894;
+}
+body
+{
+    background:linear-gradient(135deg,#f65f54,#ffffff12);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+
+.header
+{
+background-color: #F56960;
+}
+
+.header .top
+{
+    padding: .5em 5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+
+}
+.header .right .eles
+{
+    display: flex;
+}
+
+.header .right .eles .ele
+{
+    display: flex;
+    padding-right: 1em;
+    align-items: center;
+    color: white;
+}
+.header .right .eles .ele .elec
+{
+    padding-right: .3em;
+
+}
+
+
+
+.header .left 
+{
+    display: flex;
+}
+
+.links a
+{
+    display: inline-block;
+    /* padding-right: .1em; */
+    text-decoration: none;
+    color: white;
+}
+.left i
+{
+    display: inline-block;
+    padding-right: .2em;
+    text-decoration: none;
+    color: white;
+}
+#searchicon
+{
+    padding: 0px .5em;
+}
+
+section
+{
+    margin: 2em auto;
+    padding: 10px 20px;
+}
+
+.main
+{
+    text-align: center;
+    direction: rtl;
+    width: 60%;
+    box-shadow: 1px 1px 5px var(--charcoal-grey);
+    padding: 10px 30px   ;
+}
+
+
+.main .inputgroup
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
+    align-items: center;
+}
+
+.inputgroup label
+{
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 2em;
+    width: 40%;
+    text-align: right;
+
+}
+
+.inputgroup input
+{
+    background-color: #F8F8F8;
+    color: var(--charcoal-grey);
+    border: none;
+    height: 50px;
+    padding: 0 15px;
+    width: 60%;
+    line-height: 1.6;
+    font-size: 1.4em;
+    border-top-left-radius: 15px;
+}
+.inputgroupp button
+{
+    text-align: center;
+    background-color: var(--coral-red);
+    padding: 10px 20px;
+    margin-top: 1em;
+    color:white;
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 2em;
+    border: none;
+}
