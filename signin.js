@@ -21,7 +21,7 @@ document.getElementById('myAnchor').addEventListener('click', function (e) {
     .then(data => {
         if (data.message === "login successful") {
             console.log('Login Successful:', data.username);
-
+            sessionStorage.setItem("usernames",data.username)
             window.open(`addhome.html?username=${encodeURIComponent(data.username)}`);
          }
           else {

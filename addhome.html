@@ -45,11 +45,9 @@
     </div>
 
     <section class="main">
-      <form
-        action="/create-homepost"
-        method="POST"
-      >
-      <input type="hidden" id="usernameiddd" name="username" value=""> <!-- Hidden field for username -->
+      <form action="/create-homepost" method="POST" id="homePostForm">
+        <input type="hidden" id="usernameiddd" name="username" value="" />
+        <!-- Hidden field for username -->
 
         <div class="inputgroup">
           <label for="name">الاسم:</label>
@@ -91,23 +89,108 @@
           <input type="number" id="area" name="area" required />
         </div>
 
-        <!-- <div class="inputgroup">
+        <div class="inputgroup">
           <label for="imgs">رفع الصور:</label>
-          <input
-            type="file"
-            id="imgs"
-            name="imgs"
-            accept="image/*"
-            multiple
-            required
-          />
-        </div> -->
+          <input type="file" id="imgs" name="imgs" accept="image/*" required />
+        </div>
+
+        <div id="uploadStatus"></div>
+
+        <img id="uploadedImage" src="" alt="Uploaded Image will appear here" />
 
         <div class="inputgroupp">
           <button type="submit">إنشاء إعلان للمنزل</button>
         </div>
       </form>
     </section>
-    <script src="addhome.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+      import {
+        getStorage,
+        ref,
+        uploadBytes,
+        getDownloadURL,
+      } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-storage.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCxg9sOj7yJHHuoQbo3J6-SVv_p_8iRliM",
+        authDomain: "ntiproject-87d66.firebaseapp.com",
+        projectId: "ntiproject-87d66",
+        storageBucket: "ntiproject-87d66.appspot.com",
+        messagingSenderId: "192579729758",
+        appId: "1:192579729758:web:1ae716496341ec198b77cf",
+        measurementId: "G-SJ1Z1MYSD6",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const storage = getStorage(app); // Initialize Firebase Storage
+
+      document
+        .getElementById("homePostForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const username = sessionStorage.getItem("usernames");
+          document.getElementById("usernameiddd").value = username;
+
+          const formData = new FormData(this);
+          const formValues = {};
+
+          formData.forEach((value, key) => {
+            formValues[key] = value;
+            console.log(key + " its value is " + value);
+          });
+
+          const file = document.getElementById("imgs").files[0];
+          if (file) {
+            // Create a storage reference
+            const storageRef = ref(storage, `images/${file.name}`);
+
+            // Upload the file
+            uploadBytes(storageRef, file)
+              .then((snapshot) => {
+                console.log("Uploaded a blob or file!", snapshot);
+
+                // Get the download URL
+                getDownloadURL(snapshot.ref).then((downloadURL) => {
+                  console.log("File available at:", downloadURL);
+                  document.getElementById("uploadedImage").src = downloadURL;
+
+                  // Append the image URL to the form data
+                  formValues["imgs"] = downloadURL;
+
+                  // Send the form data to the server
+                  fetch("http://localhost:3000/create-homepost", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formValues),
+                  })
+                    .then((response) => response.json())
+                    .then((data) => {
+                      alert(data.message);
+                      window.location.href = "/index.html";
+                    })
+                    .catch((error) => {
+                      console.error("Error:", error);
+                      alert("Failed to create home post");
+                    });
+                });
+              })
+              .catch((error) => {
+                console.error("Upload failed:", error);
+                alert("Failed to upload image");
+              });
+          } else {
+            alert("Please select an image first.");
+          }
+        });
+    </script>
+
+    <!-- <script src="addhome.js"></script> -->
   </body>
 </html>

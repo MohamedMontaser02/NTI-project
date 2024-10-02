@@ -119,7 +119,8 @@ app.post("/create-homepost", async (req, res) => {
     newHomePost.floor = req.body.floor; 
     newHomePost.area = req.body.area; 
     newHomePost.userName = req.body.username;
-    console.log("usernameis   "+ req.body.username)
+    newHomePost.imgsURL = req.body.imgs;
+    console.log("usernameis   "+ req.body.imgs)
     await newHomePost.save();
 
     res.json({ message: "Home post created successfully!" });
@@ -146,6 +147,32 @@ async function uniqUserName(inuserName)
    }
 
 }
+
+
+app.get("/getcontennet", async(req,res)=>
+{
+    const home= await Home.find()
+    res.json(home)
+
+})
+
+
+app.get("/homeDetail/:id", async (req, res) => {
+    const homeId = req.params.id; 
+
+    try {
+        const homePost = await Home.findById(homeId); 
+
+        if (!homePost) {
+            return res.status(404).json({ message: "Home post not found" });
+        }
+
+        res.json(homePost); 
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error retrieving home post", error });
+    }
+});
 
 
 async function uniqUserEmail(inputemail)

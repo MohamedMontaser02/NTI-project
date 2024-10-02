@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+:root {
+    --coral-red: #F65F54;
+    --soft-peach: #FF9671;
+    --golden-yellow: #FFD700;
+    --light-pink: #FFCCCB;
+    --sky-blue: #4B9CD3;
+    --charcoal-grey: #333333;
+    --fresh-green: #00B894;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header
+{
+background-color: #F56960;
+}
+
+.header .top
+{
+    padding: .5em 5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+
+}
+.header .right .eles
+{
+    display: flex;
+}
+
+.header .right .eles .ele
+{
+    display: flex;
+    padding-right: 1em;
+    align-items: center;
+    color: white;
+}
+.header .right .eles .ele .elec
+{
+    padding-right: .3em;
+
+}
+
+
+
+.header .left 
+{
+    display: flex;
+}
+
+.links a
+{
+    display: inline-block;
+    /* padding-right: .1em; */
+    text-decoration: none;
+    color: white;
+}
+.left i
+{
+    display: inline-block;
+    padding-right: .2em;
+    text-decoration: none;
+    color: white;
+}
+#searchicon
+{
+    padding: 0px .5em;
+}
+
+.main
+{
+    margin: 1em 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titlem
+{
+    margin-top: .5em;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Zain", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlem .tilte
+{
+    padding-right: 20px;
+}
+
+
+.main .right
+{
+    width: 40%;
+}
+
+
+ .left
+{
+    width: 50%;
+}
+
+.left img
+{
+    width: 100%;
+}
+
+.cont .ele
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1em 2em;
+    padding: 5px 10px;
+    align-items: center;
+    border-right: solid var(--coral-red) 2px;
+}
+
+
+
+
+.cont .ele .elename
+{
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.cont .ele .elevalue
+{
+    font-family: "Zain", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2em;
+    color: var(--sky-blue);
+}
+
+
+.title
+{
+    width: 5%;
+}
+.title img
+{
+    width: 100%;
+}

@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
+:root {
+    --coral-red: #F65F54;
+    --soft-peach: #FF9671;
+    --golden-yellow: #FFD700;
+    --light-pink: #FFCCCB;
+    --sky-blue: #4B9CD3;
+    --charcoal-grey: #333333;
+    --fresh-green: #00B894;
+}
+
+
 
 *{
     box-sizing: border-box;
@@ -231,3 +242,97 @@ header .left
 {
     margin-left: 5px;
 } 
+
+
+
+section
+{
+    margin: 6em 6em;
+
+}
+
+
+.section2
+{
+    padding: 10px 20px;
+}
+
+.section2 .title
+{
+    text-decoration: none;
+    font-family: "Zain", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3.1em;
+    color:var(--coral-red);
+    text-align: center;
+
+}
+.section2 .cont2
+{
+    width: 100%;
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section2 .cont2 .ele
+{
+    width: 30%;
+    padding: 20px 20px;
+    margin: 7px 14px;
+    background-color: #f9f9f9;
+
+
+}
+
+.section2 .cont2 .ele .upper
+{
+    width: 100%;
+
+
+}
+.section2 .cont2 .ele .upper img
+{
+    width: 100%;
+
+}
+.section2 .cont2 .ele .lower
+{
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+
+}
+
+.section2 .cont2 .ele .lower .name
+{
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+.section2 .cont2 .ele .lower .place
+{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--coral-red);
+}
+
+
+.section2 .cont2 .ele .lower .prics
+{
+    font-size: 1.2em;
+    font-weight: 700;
+    color:var(--coral-red);
+}
+
+
+.section2 .cont2 .ele .lower button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1px 2px;
+    background-color: var(--sky-blue);
+    color: var(--charcoal-grey);
+    font-size: 1.2em;
+    font-weight: 700;
+}

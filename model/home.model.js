@@ -47,11 +47,12 @@ const schema=new mongoose.Schema(
         {
             type:Number,
             required:true
+        },
+        imgsURL:
+        {
+            type:String,
+            required:true
         }
-        // imgsURL:
-        // {
-        //     type:Array
-        // }
 
     }
 )
